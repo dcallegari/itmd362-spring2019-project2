@@ -6,49 +6,58 @@ Date modified: 4/5/2019
 File Name: screens.css
 */
 
+/*
+Major second  Scale:
+https://www.modularscale.com/?1.125&em&1.618
+*/
+
 html {
-  font-size: ;
-  line-height: ;
-  text-rendering: optimizeLegibility;
-  margin: 0 0;
-  padding: 0 0;
+  box-sizing: border-box; /* Note: Using border-box instead of content-box */
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Open Sans', 'Roboto', 'Lato', 'Oswald', sans-serif;
-  background-color: ;
+  font-family: 'Roboto', 'Open Sans', 'Lato', 'Oswald', sans-serif;
+  font-size: 1.125em; /* 18px = 16px * 1.125em - Base font size */
+  line-height: 1.334em; /* 24px = 18px * 1.334em - Base line height */
+  text-rendering: optimizeLegibility;
+
+}
+
+.wrapper {
+  max-width: 60em; /* 2 */
+  padding-right: 1em; /* 3 */
+  padding-left:  1em; /* 3 */
 }
 
 /* ========================  1. fonts ======================== */
 
-/*
-Major second  Scale:
-https://www.modularscale.com/?16&px&1.125
-*/
-
 h1 {
-  font-size: ;
-  line-height: ;
+  font-size: ; /* px = px * em */
+  line-height: ; /* px = px * em */
 } 
 
 h2 {
-  font-size: ;
-  line-height: ; 
+  font-size: ; /* px = px * em */
+  line-height: ;  /* px = px * em */
 }
 
 h3 {
-  font-size: ;
-  line-height: ;
-}
-
-p {
-  font-size: ;
-  line-height: ;
+  font-size: ; /* px = px * em */
+  line-height: ; /* px = px * em */
 }
 
 h4 {
-  font-size: ;
-  line-height: ;
+  font-size: ; /* px = px * em */
+  line-height: ; /* px = px * em */
+}
+
+p {
+  font-size: 1em; /* px = px * em */
+  line-height: 1.334em; /* px = px * em */
 }
 
 /* ========================  2. Responsive Media ======================== */
