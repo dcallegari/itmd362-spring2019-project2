@@ -1,0 +1,174 @@
+/*
+CSS to add styling for entire site.
+Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
+Date created: 4/5/2019
+Date modified: 4/5/2019
+File Name: screens.css
+*/
+
+html {
+  font-size: ;
+  line-height: ;
+  text-rendering: optimizeLegibility;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  font-family: 'Open Sans', 'Roboto', 'Lato', 'Oswald', sans-serif;
+  background-color: ;
+}
+
+/* ========================  1. fonts ======================== */
+
+/*
+Major second  Scale:
+https://www.modularscale.com/?16&px&1.125
+*/
+
+h1 {
+  font-size: ;
+  line-height: ;
+} 
+
+h2 {
+  font-size: ;
+  line-height: ; 
+}
+
+h3 {
+  font-size: ;
+  line-height: ;
+}
+
+p {
+  font-size: ;
+  line-height: ;
+}
+
+h4 {
+  font-size: ;
+  line-height: ;
+}
+
+/* ========================  2. Responsive Media ======================== */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  margin:0 auto;
+  left:0;       
+  right:0;       
+}
+
+/* ========================  3. Navigation ======================== */
+
+
+/* ========================  4. Main ======================== */
+section{
+  margin: 1em 0;
+  padding: 1em;
+}
+
+/* ========================  5. media queries ======================== */
+
+/* Break Point 1: Extra Small Devices, Phones */
+@media screen and (min-width: 400px) { 
+
+  /* ======= fonts ======= */
+  h1 {
+    font-size: ;
+    line-height: ;
+  } 
+
+  h2 {
+    font-size: ;
+    line-height: ; 
+  }
+
+  h3 {
+    font-size: ;
+    line-height: ;
+  }
+
+  p {
+    font-size: ;
+    line-height: ;
+  }
+
+  h4 {
+    font-size: ;
+    line-height: ;
+  }
+
+  /* ======= main ======= */
+
+}
+
+/* Break Point 2: Small Devices, Tablets, PCs */
+@media screen and (min-width: 600px) {
+
+  /* ======= fonts ======= */
+  h1 {
+    font-size: ;
+    line-height: ;
+  } 
+
+  h2 {
+    font-size: ;
+    line-height: ; 
+  }
+
+  h3 {
+    font-size: ;
+    line-height: ;
+  }
+
+  p {
+    font-size: ;
+    line-height: ;
+  }
+
+  h4 {
+    font-size: ;
+    line-height: ;
+  }
+
+  /* ======= main ======= */
+
+}
+
+/* Break Point 3: Desktop Computers, Large screens */
+@media screen and (min-width: 960px) {
+
+  /* ======= fonts ======= */
+  h1 {
+    font-size: ;
+    line-height: ;
+  } 
+
+  h2 {
+    font-size: ;
+    line-height: ; 
+  }
+
+  h3 {
+    font-size: ;
+    line-height: ;
+  }
+
+  p {
+    font-size: ;
+    line-height: ;
+  }
+
+  h4 {
+    font-size: ;
+    line-height: ;
+  }
+
+  /* ======= main ======= */
+
+}
