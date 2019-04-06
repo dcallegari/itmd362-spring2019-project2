@@ -267,15 +267,19 @@ nav{
 
 /*
 .dropdown{
-  float: left;
-  overflow: hidden;
+float: left;
+overflow: hidden;
 }
 */
+
+#navbars{
+  display: none;
+}
 
 .dropdown{
   display: none;
 }
-  
+
 .dropdown a {
   background-color: grey;
   color: white;
@@ -290,23 +294,29 @@ nav{
 
 
 /* ================ <599px Break Point 1: Extra small ================ */
+/*
 @media screen and (max-width: 37.4em) {
 
-  #navbars{
-    display: none;
-  }
-
-  #content{
-    padding: 0;
-    margin: 0;
-  }
+#navbars{
+display: none;
 }
+
+.dropdown{
+display: none;
+}
+
+#content{
+padding: 0;
+margin: 0;
+}
+}
+*/
 
 
 /* ================ 600px Break Point 2: Small or larger ================ */
 @media screen and (min-width: 37.5em) {  
 
-  #navbars{
+  .dropdown{
     display: none;
   }
 
@@ -363,10 +373,14 @@ nav{
   #navbars{
     display: inline-block;
   }
-  
+
+  .dropdown a{
+    display: none;
+  }
+
   #container{
-   max-width: 1280px;
-  margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
 }

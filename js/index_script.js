@@ -23,14 +23,6 @@ $("#menu").click(function() {
   }
 });
 
-$("#loginbtn").click(function() {
-  if($("#logindropdown").is(":hidden")){
-    $("#logindropdown").slideDown();
-  } else {
-    $("#logindropdown").slideUp();
-  }
-});
-
 $("#contactbtn").click(function() {
   if($("#contactdropdown").is(":hidden")){
     $("#contactdropdown").slideDown();
@@ -70,11 +62,16 @@ $("#homebtn").click(function() {
 var resized = false;
 
 $(window).resize(function(){
-  if ($(window).width() >= em(60)){
+  //whole navbar
+  if ($(window).innerWidth >= 960){
     $("#navbars").slideDown(0);
     resized = true;
   } else if (resized == true){
     $("#navbars").slideUp(0);
+    $("#contactdropdown").slideUp(0);
+    $("#eventsdropdown").slideUp(0);
+    $("#aboutusdropdown").slideUp(0);
+    $("#homedropdown").slideUp(0);
     resized = false;
   }
 });
