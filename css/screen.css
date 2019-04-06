@@ -265,16 +265,24 @@ nav{
   background-color: whitesmoke;
 }
 
-/* ========================  4. Main ======================== */
+/* ========================  4. media queries ======================== */
+
+
+/* ================ <599px Break Point 1: Extra small ================ */
 @media screen and (max-width: 37.4em) {
 
   #navbars{
     display: none;
   }
+  
+  #content{
+    padding: 0;
+    margin: 0;
+  }
 }
 
-/* ========================  5. media queries ======================== */
-/* 600px Break Point 1: Small or larger */
+
+/* ================ 600px Break Point 2: Small or larger ================ */
 @media screen and (min-width: 37.5em) {  
 
   #navbars{
@@ -283,10 +291,21 @@ nav{
 
 }
 
-/* 960px Break Point 2: Medium or larger*/
+
+/* ================ 960px Break Point 3: Medium or larger ================ */
 @media screen and (min-width: 60em) {
 
-  /* ======= move logo and menu ======= */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  section{
+    margin: 1em .5em;
+    padding: 1em;
+  }
+
+  /* move logo and menu  */
   #menu{
     display: none;
     visibility: hidden;
@@ -300,7 +319,7 @@ nav{
     margin: 0;
   }
 
-  /* ======= remove navbar style ======= */
+  /* remove navbar style  */
   .topnav ul{
     clear: none;
     float: right;
@@ -318,33 +337,44 @@ nav{
     background-color: white;
   }
 
+  /* make nav bar visible */
+  #navbars{
+    display: inline-block;
+  }
+  
+}
+
+
+/* =============== 1600px Break Point 4: large =============== */
+@media screen and (min-width: 100em) {
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  section{
+    margin: 1.5em .75em;
+    padding: 1.5em;
+  }
+
   /* ======= make nav bar visible ======= */
   #navbars{
     display: inline-block;
   }
-
-  /* ======= fonts ======= */
-
-
-  /* ======= main ======= */
-
 }
 
-/* 1280px Break Point 3: large*/
-@media screen and (min-width: 80em) {
-
-  /* ======= fonts ======= */
-
-  /* ======= main ======= */
-
-  /* ======= make nav bar visible ======= */
-  #navbars{
-    display: inline-block;
-  }
-}
-
-/* 1920px Break Point 3: extra-large*/
+/* ================ 1920px Break Point 5: extra-large ================ */
 @media screen and (min-width: 120em) {
+  
+  main {
+    max-width: 1600px;
+  }
+  
+  section{
+    margin: 2em 1.5em;
+    padding: 2em;
+  }
 
   /* ======= fonts ======= */
 
