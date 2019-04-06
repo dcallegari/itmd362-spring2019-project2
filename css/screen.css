@@ -273,100 +273,74 @@ nav{
 
 /* ========================  5. media queries ======================== */
 
-/* Break Point 1: Extra Small Devices, Phones */
-@media screen and (min-width: 400px) { 
+/* 600px Break Point 1: Small or larger */
+@media screen and (min-width: 37.5em) { 
 
   /* ======= fonts ======= */
-  h1 {
-    font-size: ;
-    line-height: ;
-  } 
-
-  h2 {
-    font-size: ;
-    line-height: ; 
-  }
-
-  h3 {
-    font-size: ;
-    line-height: ;
-  }
-
-  p {
-    font-size: ;
-    line-height: ;
-  }
-
-  h4 {
-    font-size: ;
-    line-height: ;
-  }
 
   /* ======= main ======= */
 
 }
 
-/* Break Point 2: Small Devices, Tablets, PCs */
-@media screen and (min-width: 600px) {
+/* 960px Break Point 2: Medium or larger*/
+@media screen and (min-width: 60em) {
+  /* ======= move logo and menu ======= */
+  #menu{
+    display: none;
+    visibility: hidden;
+    vertical-align: inherit;
+  }
+  
+  #logo{
+    float:left;
+    display: inline-block;
+    padding: 14px 16px;
+    margin: 0;
+  }
+  
+  /* ======= remove navbar style ======= */
+  .topnav{
+    
+  }
+  
+  .topnav ul{
+    clear: none;
+    display: block;
+    background: none;
+    padding-bottom: 0px;
+  }
+
+  .topnav ul li{
+    padding-top: 0px;
+  }
+
+  .topnav a {
+    display: inline-block;
+    float: right;
+    background-color: white;
+  }
 
   /* ======= fonts ======= */
-  h1 {
-    font-size: ;
-    line-height: ;
-  } 
 
-  h2 {
-    font-size: ;
-    line-height: ; 
-  }
+  /* ======= fonts ======= */
 
-  h3 {
-    font-size: ;
-    line-height: ;
-  }
-
-  p {
-    font-size: ;
-    line-height: ;
-  }
-
-  h4 {
-    font-size: ;
-    line-height: ;
-  }
 
   /* ======= main ======= */
 
 }
 
-/* Break Point 3: Desktop Computers, Large screens */
-@media screen and (min-width: 960px) {
+/* 1280px Break Point 3: large*/
+@media screen and (min-width: 80em) {
 
   /* ======= fonts ======= */
-  h1 {
-    font-size: ;
-    line-height: ;
-  } 
 
-  h2 {
-    font-size: ;
-    line-height: ; 
-  }
+  /* ======= main ======= */
+}
 
-  h3 {
-    font-size: ;
-    line-height: ;
-  }
+/* 1920px Break Point 3: extra-large*/
+@media screen and (min-width: 120em) {
 
-  p {
-    font-size: ;
-    line-height: ;
-  }
-
-  h4 {
-    font-size: ;
-    line-height: ;
-  }
+  /* ======= fonts ======= */
 
   /* ======= main ======= */
 }

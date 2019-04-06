@@ -6,12 +6,20 @@
    File Name: index_script.js
 */
 
+// Runs when the document starts
 $(document).ready(function() {
-
+  
 });
 
 
 // Toggles nav menu dropdown
 $("#menu").click(function() {
-    $("#navbars").slideToggle();
+  $("#navbars").slideToggle();
+});
+
+// Enables navbar when screen is bigger than 960px
+$(window).resize(function(){
+	if ($(window).width() >= 960){	
+		$('#navbars').show();
+	}	
 });
