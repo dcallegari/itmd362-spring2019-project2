@@ -24,7 +24,7 @@ body {
   font-size: 1em; /* 16px Base font size */
   line-height: 1.5em; /* 24px = 18px * 1.334em - Base line height */
   text-rendering: optimizeLegibility;
-  margin-top:60px;
+  margin-top:64px;
 }
 
 .wrapper{
@@ -293,27 +293,7 @@ overflow: hidden;
 /* ========================  4. media queries ======================== */
 
 
-/* ================ <599px Break Point 1: Extra small ================ */
-/*
-@media screen and (max-width: 37.4em) {
-
-#navbars{
-display: none;
-}
-
-.dropdown{
-display: none;
-}
-
-#content{
-padding: 0;
-margin: 0;
-}
-}
-*/
-
-
-/* ================ 600px Break Point 2: Small or larger ================ */
+/* ================ 600px Break Point 1: Small or larger ================ */
 @media screen and (min-width: 37.5em) {  
 
   .dropdown{
@@ -323,7 +303,7 @@ margin: 0;
 }
 
 
-/* ================ 960px Break Point 3: Medium or larger ================ */
+/* ================ 960px Break Point 2: Medium or larger ================ */
 @media screen and (min-width: 60em) {
 
   main {
@@ -354,7 +334,6 @@ margin: 0;
   .topnav ul{
     clear: none;
     float: right;
-    background: none;
     padding-bottom: 0px;
   }
 
@@ -383,10 +362,30 @@ margin: 0;
     margin: 0 auto;
   }
 
+  /* make subnav bar look good */
+  
+  .dropdown{
+    overflow: hidden;
+    position: fixed;
+    background-color: grey;
+    text-align: right;
+    width: 100%;
+    left: 0;
+  }
+  
+  .dropdown li{
+    display: block;
+  }
+
+  .dropdown a {
+    background-color: grey;
+    display: inline-block;
+  }
+
 }
 
 
-/* =============== 1600px Break Point 4: large =============== */
+/* =============== 1600px Break Point 3: large =============== */
 @media screen and (min-width: 100em) {
 
   main {
@@ -399,7 +398,7 @@ margin: 0;
     padding: 1.5em;
   }
 
-  /* ======= make nav bar visible ======= */
+  /* make nav bar visible */
   #navbars{
     display: inline-block;
   }
@@ -413,7 +412,7 @@ margin: 0;
 
 }
 
-/* ================ 1920px Break Point 5: extra-large ================ */
+/* ================ 1920px Break Point 4: extra-large ================ */
 @media screen and (min-width: 120em) {
 
   main {
@@ -425,11 +424,7 @@ margin: 0;
     padding: 2em;
   }
 
-  /* ======= fonts ======= */
-
-  /* ======= main ======= */
-
-  /* ======= make nav bar visible ======= */
+  /* make nav bar visible */
   #navbars{
     display: inline-block;
   }

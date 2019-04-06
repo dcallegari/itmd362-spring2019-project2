@@ -14,14 +14,7 @@ $(document).ready(function() {
   $("#menu").click(function() {
     $("#navbars").slideToggle();
   });
-
-  $("#contactbtn").click(function() {
-    $("#eventsdropdown").slideUp();
-    $("#aboutusdropdown").slideUp();
-    $("#homedropdown").slideUp();
-    $("#contactdropdown").slideToggle();
-  });
-
+  
   $("#eventsbtn").click(function() {
     $("#contactdropdown").slideUp();
     $("#aboutusdropdown").slideUp();
@@ -44,8 +37,6 @@ $(document).ready(function() {
   });
 
 });
-
-
 
 
 // =====================================================================
