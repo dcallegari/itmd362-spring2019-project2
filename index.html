@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="css/resets.css" />
     <link rel="stylesheet" media="screen" href="css/screen.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,9 +17,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav>
-        <ul>
-          <h1 class="logo" class="button">Company</h1>
+      <nav class="topnav">
+        <button id="menu"><i class="fa fa-bars"></i></button>
+        <h1 id="logo">Company</h1>
+        <ul id="navbars">
           <li><a class="button" href="#home">Home</a></li>
           <li><a class="button" href="#aboutus">About Us</a></li>
           <li><a class="button" href="#events">Events</a></li>
@@ -37,5 +39,9 @@
         </section>
       </main>
     </div>
+    <footer>
+      <p class=caption>Site design © 2019 Careless Spiders</p>
+      <p class=caption>All rights reserved</p>
+    </footer>
   </body>
 </html>

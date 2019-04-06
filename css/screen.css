@@ -24,7 +24,7 @@ body {
   font-size: 1em; /* 16px Base font size */
   line-height: 1.5em; /* 24px = 18px * 1.334em - Base line height */
   text-rendering: optimizeLegibility;
-
+  margin-top:60px;
 }
 
 .wrapper {
@@ -33,7 +33,14 @@ body {
   padding-left:  1em; /* 3 */
 }
 
-/* ========================  1. fonts ======================== */
+footer{
+  padding: 1em;
+  background-color: grey;
+  text-align: center;
+  
+}
+
+/* ========================  1. Scaled fonts ======================== */
 
 h1 {
   font-size: 6em; /* 96px = 16px * 6em */
@@ -168,18 +175,95 @@ img {
 }
 
 /* ========================  3. Navigation ======================== */
-a {
+nav{
+  overflow: hidden;
+  box-shadow: 1px 1px 4px #888888;
+  background-color: white;
+}
+
+/* Company name/logo */
+#logo{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-size: .875em; /* 14px = 16px * .875em */
+  line-height: 2.25rem; /* 36px = 16px * 2.25em */
+  font-weight: 500; /* medium */
+  letter-spacing: .0892857143em; /* 1.25 / 14px */
+  text-transform: uppercase;
+  margin: 0.83em 0;
+  padding: 0 8px
+}
+
+/* Menu bar*/
+#menu{
+  display: inline-block;
+  float: left;
+  text-align: left;
+  text-align: center;
+  font-size: .875em; 
+  line-height: 2.25rem;
+  font-weight: 500;
+  letter-spacing: .0892857143rem; 
+  text-transform: uppercase;
+  margin: 0.83em 0;
+  /* remove box*/
+  border: none;
+  background: none;
+  padding: 0 8px;
+}
+
+#menu i{
+  font-size: 24px;
+  letter-spacing: .125em;
+  vertical-align: middle;
+}
+
+/* Sticky navigation bar */
+.topnav {
+  overflow: hidden;
+  /* sticky navigation */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topnav ul{
+  clear: both;
+  display: none;
+  background: grey;
+  padding-bottom: 2px;
+}
+
+.topnav ul li{
+  padding-top: 2px;
+}
+
+.topnav a {
+  display: block;
+  color: black;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-.logo{
-  display: inline-block;
+.topnav a:hover {
+  background-color: whitesmoke;
 }
 
 /* ========================  4. Main ======================== */
+.wrapper{
+  width: 100%;
+  height: auto;
+  background-color: #ddd;
+}
+
 section{
-  margin: 1em 0;
+  margin: 0 1em;
   padding: 1em;
+  background-color: white;
 }
 
 /* ========================  5. media queries ======================== */
@@ -280,5 +364,4 @@ section{
   }
 
   /* ======= main ======= */
-
 }
