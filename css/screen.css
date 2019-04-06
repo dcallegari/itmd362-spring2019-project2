@@ -39,6 +39,7 @@ main {
   width: 100%;
   background-color: #ddd;
   overflow: hidden;
+  -webkit-box-shadow: 3px 3px 5px 2px #555555;
 }
 
 section{
@@ -52,7 +53,6 @@ footer{
   padding: 1em;
   background-color: grey;
   text-align: center;
-
 }
 
 /* ========================  1. Scaled fonts ======================== */
@@ -274,7 +274,7 @@ nav{
   #navbars{
     display: none;
   }
-  
+
   #content{
     padding: 0;
     margin: 0;
@@ -342,6 +342,11 @@ nav{
     display: inline-block;
   }
   
+  #container{
+   max-width: 1280px;
+  margin: 0 auto;
+  }
+
 }
 
 
@@ -362,15 +367,23 @@ nav{
   #navbars{
     display: inline-block;
   }
+
+  #container{
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
 }
 
 /* ================ 1920px Break Point 5: extra-large ================ */
 @media screen and (min-width: 120em) {
-  
+
   main {
     max-width: 1600px;
   }
-  
+
   section{
     margin: 2em 1.5em;
     padding: 2em;
@@ -384,4 +397,12 @@ nav{
   #navbars{
     display: inline-block;
   }
+
+  #container{
+    max-width: 1600px;
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
 }
