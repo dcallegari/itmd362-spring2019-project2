@@ -2,7 +2,7 @@
 CSS to add styling for entire site.
 Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
 Date created: 4/5/2019
-Date modified: 4/5/2019
+Date modified: 4/6/2019
 File Name: screens.css
 */
 
@@ -244,12 +244,10 @@ nav{
 
 .topnav ul{
   clear: both;
-  background: grey;
-  padding-bottom: 2px;
 }
 
 .topnav ul li{
-  padding-top: 2px;
+  border-top: solid 2px grey; 
 }
 
 .topnav a {
@@ -263,6 +261,29 @@ nav{
 
 .topnav a:hover {
   background-color: whitesmoke;
+}
+
+/* dropdown navs */
+
+/*
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+*/
+
+.dropdown{
+  display: none;
+}
+  
+.dropdown a {
+  background-color: grey;
+  color: white;
+  padding: 8px 12px;
+}
+
+.dropdown a:hover {
+  background-color: dimgrey;
 }
 
 /* ========================  4. media queries ======================== */
@@ -330,6 +351,7 @@ nav{
   .topnav ul li{
     display: inline-block;
     padding-top: 0px;
+    border-top: solid 0px white;
   }
 
   .topnav a {
