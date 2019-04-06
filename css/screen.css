@@ -27,17 +27,32 @@ body {
   margin-top:60px;
 }
 
-.wrapper {
-  max-width: 60em; /* 2 */
+.wrapper{
+  width: 100%;
+  height: auto;
   padding-right: 1em; /* 3 */
   padding-left:  1em; /* 3 */
+  background-color: dimgrey;
 }
+
+main {
+  width: 100%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+section{
+  margin: 1em .5em;
+  padding: 1em;
+  background-color: white;
+}
+
 
 footer{
   padding: 1em;
   background-color: grey;
   text-align: center;
-  
+
 }
 
 /* ========================  1. Scaled fonts ======================== */
@@ -254,17 +269,7 @@ nav{
 }
 
 /* ========================  4. Main ======================== */
-.wrapper{
-  width: 100%;
-  height: auto;
-  background-color: #ddd;
-}
 
-section{
-  margin: 0 1em;
-  padding: 1em;
-  background-color: white;
-}
 
 /* ========================  5. media queries ======================== */
 
