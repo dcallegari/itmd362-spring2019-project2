@@ -206,8 +206,8 @@ nav{
   font-weight: 500; /* medium */
   letter-spacing: .0892857143em; /* 1.25 / 14px */
   text-transform: uppercase;
-  margin: 0.83em 0;
-  padding: 0 8px
+  padding: 14px 16px;
+  margin: 0;
 }
 
 /* Menu bar*/
@@ -219,18 +219,16 @@ nav{
   font-size: .875em; 
   line-height: 2.25rem;
   font-weight: 500;
-  letter-spacing: .0892857143rem; 
   text-transform: uppercase;
-  margin: 0.83em 0;
   /* remove box*/
   border: none;
   background: none;
-  padding: 0 8px;
+  padding: 14px 16px;
+  margin: 0;
 }
 
 #menu i{
   font-size: 24px;
-  letter-spacing: .125em;
   vertical-align: middle;
 }
 
@@ -246,7 +244,6 @@ nav{
 
 .topnav ul{
   clear: both;
-  display: none;
   background: grey;
   padding-bottom: 2px;
 }
@@ -269,58 +266,62 @@ nav{
 }
 
 /* ========================  4. Main ======================== */
+@media screen and (max-width: 37.4em) {
 
+  #navbars{
+    display: none;
+  }
+}
 
 /* ========================  5. media queries ======================== */
-
 /* 600px Break Point 1: Small or larger */
-@media screen and (min-width: 37.5em) { 
+@media screen and (min-width: 37.5em) {  
 
-  /* ======= fonts ======= */
-
-  /* ======= main ======= */
+  #navbars{
+    display: none;
+  }
 
 }
 
 /* 960px Break Point 2: Medium or larger*/
 @media screen and (min-width: 60em) {
+
   /* ======= move logo and menu ======= */
   #menu{
     display: none;
     visibility: hidden;
     vertical-align: inherit;
   }
-  
+
   #logo{
     float:left;
     display: inline-block;
     padding: 14px 16px;
     margin: 0;
   }
-  
+
   /* ======= remove navbar style ======= */
-  .topnav{
-    
-  }
-  
   .topnav ul{
     clear: none;
-    display: block;
+    float: right;
     background: none;
     padding-bottom: 0px;
   }
 
   .topnav ul li{
+    display: inline-block;
     padding-top: 0px;
   }
 
   .topnav a {
     display: inline-block;
-    float: right;
     background-color: white;
   }
 
-  /* ======= fonts ======= */
+  /* ======= make nav bar visible ======= */
+  #navbars{
+    display: inline-block;
+  }
 
   /* ======= fonts ======= */
 
@@ -335,6 +336,11 @@ nav{
   /* ======= fonts ======= */
 
   /* ======= main ======= */
+
+  /* ======= make nav bar visible ======= */
+  #navbars{
+    display: inline-block;
+  }
 }
 
 /* 1920px Break Point 3: extra-large*/
@@ -343,4 +349,9 @@ nav{
   /* ======= fonts ======= */
 
   /* ======= main ======= */
+
+  /* ======= make nav bar visible ======= */
+  #navbars{
+    display: inline-block;
+  }
 }
