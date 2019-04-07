@@ -6,7 +6,6 @@
    File Name: index_script.js
 */
 
-
 // Runs when the document starts
 $(document).ready(function() {
 
@@ -14,26 +13,36 @@ $(document).ready(function() {
   $("#menu").click(function() {
     $("#navbars").slideToggle();
   });
-  
-  $("#eventsbtn").click(function() {
-    $("#contactdropdown").slideUp();
-    $("#aboutusdropdown").slideUp();
-    $("#homedropdown").slideUp();
-    $("#eventsdropdown").slideToggle();
+
+  $("#homebtn").click(function() {
+    if ($(window).outerWidth() >= 960){
+      window.location.href='index.html'; // go to home page
+    } else {
+      $("#eventsdropdown").slideUp();
+      $("#aboutusdropdown").slideUp();
+      $("#homedropdown").slideToggle();
+    }
+
   });
 
   $("#aboutusbtn").click(function() {
-    $("#contactdropdown").slideUp();
-    $("#eventsdropdown").slideUp();
-    $("#homedropdown").slideUp();
-    $("#aboutusdropdown").slideToggle();
+    if ($(window).outerWidth() >= 960){
+      window.location.href='aboutus.html'; // go to about us page
+    } else {
+      $("#eventsdropdown").slideUp();
+      $("#homedropdown").slideUp();
+      $("#aboutusdropdown").slideToggle();
+    }
   });
 
-  $("#homebtn").click(function() {
-    $("#contactdropdown").slideUp();
-    $("#eventsdropdown").slideUp();
-    $("#aboutusdropdown").slideUp();
-    $("#homedropdown").slideToggle();
+  $("#eventsbtn").click(function() {
+    if ($(window).outerWidth() >= 960){
+      window.location.href='events.html'; // go to events page
+    } else {
+      $("#aboutusdropdown").slideUp();
+      $("#homedropdown").slideUp();
+      $("#eventsdropdown").slideToggle();
+    }
   });
 
 });
@@ -43,15 +52,21 @@ $(document).ready(function() {
 // Shows or hides the mobile navbar when resizing to larger screen
 var resized = false;
 $(window).resize(function(){
-  if ($(window).outerWidth() >= 960){
+  // Hides mobile nav, but shows main nav
+  if ($(window).outerWidth() >= 960 && resized == false){
     $("#navbars").show();
+    $("#eventsdropdown").hide();
+    $("#aboutusdropdown").hide();
+    $("#homedropdown").hide();
     resized = true;
-  } else if (resized == true){
+  } 
+  // Hides main nav
+  if($(window).outerWidth() < 960 && resized == true){
     $("#navbars").hide();
-    $("#contactdropdown").hide();
     $("#eventsdropdown").hide();
     $("#aboutusdropdown").hide();
     $("#homedropdown").hide();
     resized = false;
   }
+  
 });
