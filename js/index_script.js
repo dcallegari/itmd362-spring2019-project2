@@ -8,81 +8,113 @@
 
 // Runs when the document starts
 $(document).ready(function() {
+  var initialdrop = false;
 
   // ======== Toggles nav menu dropdowns ========
   $("#menu").click(function() {
     $("#navbars").slideToggle();
   });
 
-  $("#homebtn").click(function() {
-    if ($(window).outerWidth() >= 960){
-      window.location.href='index.html'; // go to home page
-    } else {
-      $("#eventsdropdown").slideUp();
-      $("#aboutusdropdown").slideUp();
-      $("#homedropdown").slideToggle();
-    }
-
-  });
-
-  $("#aboutusbtn").click(function() {
-    if ($(window).outerWidth() >= 960){
-      window.location.href='aboutus.html'; // go to about us page
-    } else {
-      $("#eventsdropdown").slideUp();
-      $("#homedropdown").slideUp();
-      $("#aboutusdropdown").slideToggle();
-    }
-  });
-
-  $("#eventsbtn").click(function() {
-    if ($(window).outerWidth() >= 960){
-      window.location.href='events.html'; // go to events page
-    } else {
-      $("#aboutusdropdown").slideUp();
-      $("#homedropdown").slideUp();
-      $("#eventsdropdown").slideToggle();
-    }
-  });
-
-
-
-  // ======== Mouse hover for desktop view ========
-
-  // home 
+  // ======== home button ========
   $("#homebtn").on({  
     mouseenter: function () {
-      if ($(window).outerWidth() >= 960){
-        $("#homedropdown").slideDown(400);
-        $("#eventsdropdown").slideUp(400);
-        $("#aboutusdropdown").slideUp(400);
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        $("#homedropdown").slideDown(200, function(){ initialdrop = true;});
+      } else if ($(window).outerWidth() >= 960) {
+        $("#homedropdown").show();
+        $("#eventsdropdown").hide();
+        $("#aboutusdropdown").hide();
       }
-    }
+    },
+
+    dblclick: function () {
+      window.location.href='index.html'; 
+    },
+
+    click: function () {
+      if ($(window).outerWidth() >= 960){
+        window.location.href='index.html'; // go to home page
+      } else {
+        $("#eventsdropdown").slideUp();
+        $("#aboutusdropdown").slideUp();
+        $("#homedropdown").slideToggle();
+      }
+    } 
+
   })
 
-  // about us
+  // ======== about us ========
   $("#aboutusbtn").on({  
     mouseenter: function () {
-      if ($(window).outerWidth() >= 960){
-        $("#aboutusdropdown").slideDown(400);
-        $("#eventsdropdown").slideUp(400);
-        $("#homedropdown").slideUp(400);
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        $("#aboutusdropdown").slideDown(200, function(){ initialdrop = true;});
+        initialdrop = true;
+      } else if ($(window).outerWidth() >= 960){
+        $("#aboutusdropdown").show();
+        $("#eventsdropdown").hide();
+        $("#homedropdown").hide();
       }
-    }
-  })
-  
-  // events
-    $("#eventsbtn").on({  
-    mouseenter: function () {
+    },
+
+    dblclick: function () {
+      window.location.href='aboutus.html'; 
+    },
+
+    click: function () {
       if ($(window).outerWidth() >= 960){
-        $("#eventsdropdown").slideDown(400);
-        $("#aboutusdropdown").slideUp(400);
-        $("#homedropdown").slideUp(400);
+        window.location.href='aboutus.html'; // go to home page
+      } else {
+        $("#eventsdropdown").slideUp();
+        $("#homedropdown").slideUp();
+        $("#aboutusdropdown").slideToggle();
       }
-    }
+    } 
   })
 
-  // entire nav
+  // ======== events ========
+  $("#eventsbtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        $("#eventsdropdown").slideDown(200, function(){ initialdrop = true;});
+        initialdrop = true;
+      } else if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").show();
+        $("#aboutusdropdown").hide();
+        $("#homedropdown").hide();
+      }
+    },
+
+    dblclick: function () {
+      window.location.href='events.html'; 
+    },
+
+    click: function () {
+      if ($(window).outerWidth() >= 960){
+        window.location.href='events.html'; // go to home page
+      } else {
+        $("#aboutusdropdown").slideUp();
+        $("#homedropdown").slideUp();
+        $("#eventsdropdown").slideToggle();
+      }
+    } 
+
+  })
+
+  // ======== contact ========
+  $("#contactbtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideUp(200);
+        $("#aboutusdropdown").slideUp(200);
+        $("#homedropdown").slideUp(200);
+        initialdrop = false;
+      }
+    }
+
+  })
+
+
+  // ======== whole nav ========
   $("nav").on({  
     mouseenter: function () { },
     mouseleave: function () {
@@ -90,10 +122,11 @@ $(document).ready(function() {
         $("#eventsdropdown").slideUp(200);
         $("#aboutusdropdown").slideUp(200);
         $("#homedropdown").slideUp(200);
+        initialdrop = false;
       }
     }
   })
-  
+
 });
 
 
