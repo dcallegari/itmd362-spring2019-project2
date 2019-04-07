@@ -100,6 +100,19 @@ $(document).ready(function() {
 
   })
 
+  // ======== contact ========
+  $("#contactbtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideUp(200);
+        $("#aboutusdropdown").slideUp(200);
+        $("#homedropdown").slideUp(200);
+        initialdrop = false;
+      }
+    }
+
+  })
+
 
   // ======== whole nav ========
   $("nav").on({  
