@@ -335,6 +335,8 @@ overflow: hidden;
     clear: none;
     float: right;
     padding-bottom: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .topnav ul li{

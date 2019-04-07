@@ -45,6 +45,55 @@ $(document).ready(function() {
     }
   });
 
+
+
+  // ======== Mouse hover for desktop view ========
+
+  // home 
+  $("#homebtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#homedropdown").slideDown(400);
+        $("#eventsdropdown").slideUp(400);
+        $("#aboutusdropdown").slideUp(400);
+      }
+    }
+  })
+
+  // about us
+  $("#aboutusbtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#aboutusdropdown").slideDown(400);
+        $("#eventsdropdown").slideUp(400);
+        $("#homedropdown").slideUp(400);
+      }
+    }
+  })
+  
+  // events
+    $("#eventsbtn").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideDown(400);
+        $("#aboutusdropdown").slideUp(400);
+        $("#homedropdown").slideUp(400);
+      }
+    }
+  })
+
+  // entire nav
+  $("nav").on({  
+    mouseenter: function () { },
+    mouseleave: function () {
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideUp(200);
+        $("#aboutusdropdown").slideUp(200);
+        $("#homedropdown").slideUp(200);
+      }
+    }
+  })
+  
 });
 
 
@@ -68,5 +117,5 @@ $(window).resize(function(){
     $("#homedropdown").hide();
     resized = false;
   }
-  
+
 });
