@@ -129,7 +129,9 @@ $(document).ready(function() {
         $("#homedropdown").slideUp(200);
         initialdrop = false;
       }
-    }
+    },
+    
+    click: function () { window.location.href='/itmd362-spring2019-project2/contact.html'; }
 
   })
 
