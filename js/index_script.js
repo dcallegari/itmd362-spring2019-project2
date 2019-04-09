@@ -15,6 +15,9 @@ $(document).ready(function() {
     $("#navbars").slideToggle();
   });
 
+  // ====================================================================
+  // main buttons
+  
   // ======== home button ========
   $("#homebtn").on({  
     mouseenter: function () {
