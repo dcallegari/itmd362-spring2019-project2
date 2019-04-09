@@ -119,7 +119,37 @@ $(document).ready(function() {
     } 
 
   })
+  //=============submenu=============
+  $("#submenu").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        $("#submenudropdown").slideDown(200, function(){ initialdrop = true;});
+        initialdrop = true;
+      } else if ($(window).outerWidth() >= 960){
+        $("#submenudropdown").show();
+        $("#aboutusdropdown").hide();
+        $("#homedropdown").hide();
+      }
+    },
 
+    click: function () {
+      if ($(window).outerWidth() >= 960){
+        window.location.href='/events.html'; // go to home page
+      } else {
+        $("#aboutusdropdown").slideUp();
+        $("#homedropdown").slideUp();
+        $("#eventsdropdown").slideToggle();
+        $("#submenudropdown").slideToggle();
+      }
+    }, 
+    
+    mouseleave: function () {
+      if ($(window).outerWidth() >= 960)
+      {$("#submenudropdown").slideToggle();}
+    }
+
+  })
+  
   // ======== contact ========
   $("#contactbtn").on({  
     mouseenter: function () {
