@@ -15,6 +15,9 @@ $(document).ready(function() {
     $("#navbars").slideToggle();
   });
 
+  // ====================================================================
+  // main buttons
+  
   // ======== home button ========
   $("#homebtn").on({  
     mouseenter: function () {
@@ -62,7 +65,7 @@ $(document).ready(function() {
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='aboutus.html'; // go to home page
+        window.location.href='/itmd362-spring2019-project2-dsc/aboutus.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#homedropdown").slideUp();
@@ -70,7 +73,24 @@ $(document).ready(function() {
       }
     } 
   })
-
+  
+  // === ABOUT SUBNAV ===
+  $("#abouthisbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutconbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutdirbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutjourbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
   // ======== events ========
   $("#eventsbtn").on({  
     mouseenter: function () {
@@ -126,7 +146,7 @@ $(document).ready(function() {
       }
     }
   })
-
+  
 });
 
 

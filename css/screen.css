@@ -44,6 +44,15 @@ section{
   margin: 1rem 0;
   padding: 1rem;
   background-color: white;
+  overflow: hidden;
+}
+
+ul.about {
+  display: block;
+  width: 95%;
+  margin: auto;
+  list-style-type: circle;
+  list-style-position: outside;
 }
 
 
@@ -61,32 +70,34 @@ h1 {
   line-height: 6rem; /* 96px = 16px * 6em */
   font-weight: 300; /* light */
   letter-spacing: -0.015625em; /* -1.5 / 96px */
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0;
 } 
+
+h1.margin{
+    margin: 0.83em 0;
+}
 
 h2 {
   font-size: 3.75em; /* 60px = 16px * 3.75em */
   line-height: 3.75rem;  /* 60px = 16px * 3.75em */
   font-weight: 300; /* light */
   letter-spacing: -.0083333333em; /* -0.5 / 60px */
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
+
+h2.margin{
+   margin: 0.83em 0;
+}
+
 
 h3 {
   font-size: 3em; /* 48px = 16px * 3em */
   line-height: 3.125rem;  /* 50px = 16px * 3.125em */
   font-weight: 400; /* regular */
   letter-spacing: normal; /* 0 / 48px */
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+h3.margin{
+  margin: 1em 0;
 }
 
 h4 {
@@ -94,10 +105,10 @@ h4 {
   line-height: 2.5rem;  /* 40px = 16px * 2.5em */
   font-weight: 400; /* regular */
   letter-spacing: 0.0073529412em; /* 0.25 / 34px */
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+h4.margin{
+  margin: 1.33em 0;
 }
 
 h5 {
@@ -105,10 +116,10 @@ h5 {
   line-height: 2rem;  /* 32px = 16px * 2em */
   font-weight: 400; /* regular */
   letter-spacing: normal; /* 0 / 24px */
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+h5.margin{
+    margin: 1.67em 0;
 }
 
 h6 {
@@ -116,10 +127,10 @@ h6 {
   line-height: 2.5rem;  /* 40px = 16px * 2.5em */
   font-weight: 500; /* medium */
   letter-spacing: 0.0125em; /* 0.15 / 20px */
-  margin-block-start: 2.33em;
-  margin-block-end: 2.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+h6.margin{
+  margin: 2.33em 0;
 }
 
 p {
@@ -127,10 +138,10 @@ p {
   line-height: 1.5em; /* 24px = 16px * 1.5em */
   font-weight: 400; /* regular */
   letter-spacing: .03125em; /* .5 / 16px */
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+p.margin{
+  margin: 1em 0;
 }
 
 .body2 {
@@ -174,6 +185,8 @@ p {
   text-transform: uppercase;
   padding: 0 0 1rem 0;
 }
+
+.margin
 
 
 /* ========================  2. Responsive Media ======================== */
@@ -262,15 +275,6 @@ nav{
   background-color: whitesmoke;
 }
 
-/* dropdown navs */
-
-/*
-.dropdown{
-float: left;
-overflow: hidden;
-}
-*/
-
 #navbars{
   display: none;
 }
@@ -308,11 +312,6 @@ overflow: hidden;
   main {
     max-width: 960px;
     margin: 0 auto;
-  }
-
-  section{
-    margin: 1em .5em;
-    padding: 1em;
   }
 
   /* move logo and menu  */
@@ -377,8 +376,6 @@ overflow: hidden;
   
   .dropdown li{
     display: block;
-    
-    
   }
 
   .dropdown a {
@@ -403,11 +400,6 @@ overflow: hidden;
     margin: 0 auto;
   }
 
-  section{
-    margin: 1.5em .75em;
-    padding: 1.5em;
-  }
-
   /* make nav bar visible */
   #navbars{
     display: inline-block;
@@ -427,11 +419,6 @@ overflow: hidden;
 
   main {
     max-width: 1600px;
-  }
-
-  section{
-    margin: 2em 1.5em;
-    padding: 2em;
   }
 
   /* make nav bar visible */
