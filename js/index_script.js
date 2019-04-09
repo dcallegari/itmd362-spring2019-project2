@@ -80,15 +80,15 @@ $(document).ready(function() {
   })
   
   $("#aboutconbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/constitution.html'; }
   })
   
   $("#aboutdirbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/directors.html'; }
   })
   
   $("#aboutjourbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/journal.html'; }
   })
   
   // ======== events ========
