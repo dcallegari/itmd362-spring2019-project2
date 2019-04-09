@@ -31,12 +31,12 @@ $(document).ready(function() {
     },
 
     dblclick: function () {
-      window.location.href='index.html'; 
+      window.location.href='/index.html'; 
     },
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='index.html'; // go to home page
+        window.location.href='/index.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#aboutusdropdown").slideUp();
@@ -60,12 +60,12 @@ $(document).ready(function() {
     },
 
     dblclick: function () {
-      window.location.href='aboutus.html'; 
+      window.location.href='/aboutus.html'; 
     },
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/itmd362-spring2019-project2-dsc/aboutus.html'; // go to home page
+        window.location.href='/aboutus.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#homedropdown").slideUp();
@@ -76,19 +76,19 @@ $(document).ready(function() {
   
   // === ABOUT SUBNAV ===
   $("#abouthisbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/about/history.html'; }
   })
   
   $("#aboutconbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/about/history.html'; }
   })
   
   $("#aboutdirbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/about/history.html'; }
   })
   
   $("#aboutjourbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/about/history.html'; }
   })
   
   // ======== events ========
@@ -105,12 +105,12 @@ $(document).ready(function() {
     },
 
     dblclick: function () {
-      window.location.href='events.html'; 
+      window.location.href='/events.html'; 
     },
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='events.html'; // go to home page
+        window.location.href='/events.html'; // go to home page
       } else {
         $("#aboutusdropdown").slideUp();
         $("#homedropdown").slideUp();
@@ -128,6 +128,19 @@ $(document).ready(function() {
         $("#aboutusdropdown").slideUp(200);
         $("#homedropdown").slideUp(200);
         initialdrop = false;
+      }
+    },
+    dblclick: function () {
+      window.location.href='/contact.html'; 
+    },
+
+    click: function () {
+      if ($(window).outerWidth() >= 960){
+        window.location.href='/contact.html'; // go to home page
+      } else {
+        $("#aboutusdropdown").slideUp();
+        $("#homedropdown").slideUp();
+        $("#eventsdropdown").slideUp();
       }
     }
 
