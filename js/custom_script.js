@@ -9,8 +9,8 @@
 // Runs when the document starts
 $(document).ready(function() {
 
-  $("#page3btn").on({
-    click: function () { window.location.href='events.html'; }
+  $("#btnSubmit").click(function(){
+        alert("button");
   })
 
 });

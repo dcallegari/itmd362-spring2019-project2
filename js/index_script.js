@@ -65,7 +65,7 @@ $(document).ready(function() {
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/itmd362-spring2019-project2-dsc/aboutus.html'; // go to home page
+        window.location.href='/itmd362-spring2019-project2/aboutus.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#homedropdown").slideUp();
