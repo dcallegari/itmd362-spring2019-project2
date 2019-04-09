@@ -71,6 +71,8 @@ $(document).ready(function() {
     } 
   })
   
+  $("#abouthisbtn").onclick = function()
+  
   // ======== events ========
   $("#eventsbtn").on({  
     mouseenter: function () {
