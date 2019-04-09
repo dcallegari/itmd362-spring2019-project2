@@ -73,7 +73,19 @@ $(document).ready(function() {
   
   // === ABOUT SUBNAV ===
   $("#abouthisbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2-dsc/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutconbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutdirbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+  })
+  
+  $("#aboutjourbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
   })
   
   // ======== events ========
