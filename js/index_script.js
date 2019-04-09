@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='aboutus.html'; // go to home page
+        window.location.href='/itmd362-spring2019-project2-dsc/aboutus.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#homedropdown").slideUp();
@@ -71,7 +71,10 @@ $(document).ready(function() {
     } 
   })
   
-  $("#abouthisbtn").onclick = function()
+  // === ABOUT SUBNAV ===
+  $("#abouthisbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2-dsc/about/history.html'; }
+  })
   
   // ======== events ========
   $("#eventsbtn").on({  
