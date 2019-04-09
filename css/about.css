@@ -1,0 +1,20 @@
+/*
+CSS to add styling for home page.
+Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
+Date created: 4/8/2019
+Date modified: 4/8/2019
+File Name: home.css
+*/
+
+/*
+Material design scale
+https://material.io/design/typography/the-type-system.html#type-scale
+*/
+
+ul {
+  display: block;
+  width: 95%;
+  margin: auto;
+  list-style-type: circle;
+  list-style-position: outside;
+}
