@@ -41,3 +41,26 @@
 {
   z-index: 10;
 }
+
+.contentbutton a
+{
+  display: block;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.contentbutton100:hover
+{
+  background-color: dimgray;
+}
+#w100
+{
+  width: 100%;
+}
+#w33
+{
+  width: 33%;
+  margin: auto;
+}
