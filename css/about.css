@@ -11,18 +11,6 @@ Material design scale
 https://material.io/design/typography/the-type-system.html#type-scale
 */
 
-.abtlogo {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  margin-right: 1em;
-  float: left;
-}
-
-.location {
-  font-size: .75em;
-}
-
 li.margin {
   margin: 1em 0;
 }
@@ -37,4 +25,36 @@ ul.about {
 
 ul.leaders {
   margin: 1em 0 1em 1em;
+}
+
+.abtlogo {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+  float: left;
+}
+
+.location {
+  font-size: .75em;
+}
+
+#daubook {
+  display: block;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 1em 0;
+  float: left;
+}
+
+.journal {
+  width: 220px;
+  height: 350px;
+  margin: 1em;
+  float: left;
+}
+
+.jtitle {
+  font-style: italic;
+  text-decoration: underline;
 }
