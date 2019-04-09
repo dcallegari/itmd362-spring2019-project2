@@ -31,12 +31,12 @@ $(document).ready(function() {
     },
 
     dblclick: function () {
-      window.location.href='/index.html'; 
+      window.location.href='/itmd362-spring2019-project2/index.html'; 
     },
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/index.html'; // go to home page
+        window.location.href='/itmd362-spring2019-project2/index.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#aboutusdropdown").slideUp();
