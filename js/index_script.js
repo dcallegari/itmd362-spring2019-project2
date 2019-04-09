@@ -70,7 +70,7 @@ $(document).ready(function() {
       }
     } 
   })
-
+  
   // ======== events ========
   $("#eventsbtn").on({  
     mouseenter: function () {
@@ -126,7 +126,7 @@ $(document).ready(function() {
       }
     }
   })
-
+  
 });
 
 
