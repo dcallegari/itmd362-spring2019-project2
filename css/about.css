@@ -11,7 +11,7 @@ Material design scale
 https://material.io/design/typography/the-type-system.html#type-scale
 */
 
-ul {
+ul.about {
   display: block;
   width: 95%;
   margin: auto;
