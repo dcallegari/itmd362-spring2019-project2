@@ -11,10 +11,30 @@ Material design scale
 https://material.io/design/typography/the-type-system.html#type-scale
 */
 
+.abtlogo {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+  float: left;
+}
+
+.location {
+  font-size: .75em;
+}
+
+li.margin {
+  margin: 1em 0;
+}
+
 ul.about {
   display: block;
   width: 95%;
   margin: auto;
   list-style-type: circle;
   list-style-position: outside;
+}
+
+ul.leaders {
+  margin: 1em 0 1em 1em;
 }
