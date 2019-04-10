@@ -233,6 +233,24 @@ $(document).ready(function() {
 
   // ======== contact ========
   $("#contactbtn").on({  
+
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        initialdrop = true;
+      }
+      else if ($(window).outerWidth() >= 960){
+        if(initialsubdrop == true){
+          slideNavAndSubnav();
+        }
+        else{
+          $("#aboutusdropdown").hide();
+          $("#eventsdropdown").hide();  
+          $("#homedropdown").hide();
+        }
+      }
+    },
+
+
     mouseenter: function () {
       if ($(window).outerWidth() >= 960){
         slideNavAndSubnav();
@@ -280,14 +298,14 @@ function slideNavAndSubnav(){
 }
 
 //homepage signup button
-  $("#signupbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
-  })
+$("#signupbtn").on({
+  click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
+})
 
 //form signup button
-  $("#signupbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
-  })
+$("#signupbtn").on({
+  click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
+})
 
 
 // =====================================================================
