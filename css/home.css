@@ -2,7 +2,7 @@
 CSS to add styling for home page.
 Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
 Date created: 4/8/2019
-Date modified: 4/8/2019
+Date modified: 4/9/2019
 File Name: home.css
 */
 
@@ -25,12 +25,14 @@ https://material.io/design/typography/the-type-system.html#type-scale
   position: relative;
   width: 100%;
   margin: 0 auto;
+  z-index: 0;
 }
 
 /* slideshow images */
 
 .slideshow img{
   width: 100%;
+  z-index: 0;
 }
 
 .slideshow ul li{
@@ -59,6 +61,7 @@ https://material.io/design/typography/the-type-system.html#type-scale
   margin: -19px 0 0 0;
   top: 50%;
   left: 0%;
+  z-index: 0;
 }
 
 #slideshow-right {
@@ -66,6 +69,7 @@ https://material.io/design/typography/the-type-system.html#type-scale
   margin: -19px 0 0 0;
   top: 50%;
   right: 0%;
+  z-index: 0;
 }
 
 /* slideshow dots */
