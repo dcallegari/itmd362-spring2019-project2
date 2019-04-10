@@ -250,13 +250,6 @@ $(document).ready(function() {
       }
     },
 
-
-    mouseenter: function () {
-      if ($(window).outerWidth() >= 960){
-        slideNavAndSubnav();
-      }
-    },
-
     dblclick: function () {
       window.location.href='/itmd362-spring2019-project2/contact.html'; 
     },
