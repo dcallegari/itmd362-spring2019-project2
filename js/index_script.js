@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/itmd362-spring2019-project2/index.html'; // Go to home page
+        window.location.href='/itmd362-spring2019-project2/index.html'; // go to home page
       } else {
         $("#eventsdropdown").slideUp();
         $("#aboutusdropdown").slideUp();
@@ -90,7 +90,7 @@ $(document).ready(function() {
     click: function () { window.location.href='/itmd362-spring2019-project2/about/journal.html'; }
   })
   
-  // ======== events ========
+  // ======== events ========!Edited!!
   $("#eventsbtn").on({  
     mouseenter: function () {
       if ($(window).outerWidth() >= 960 && initialdrop == false){
@@ -118,7 +118,74 @@ $(document).ready(function() {
     } 
 
   })
+  //=============submenu=============
+  $("#submenuev").on({  
+    mouseenter: function () {
+      if ($(window).outerWidth() >= 960 && initialdrop == false){
+        $("#submenudropdown").slideDown(200, function(){ initialdrop = true;});
+        initialdrop = true;
+      } else if ($(window).outerWidth() >= 960){
+        $("#submenudropdown").show();
+        $("#aboutusdropdown").hide();
+        $("#homedropdown").hide();
+      }
+    },
 
+    click: function () {
+      if ($(window).outerWidth() >= 960){
+        //window.location.href='/events.html'; 
+      } else {
+        $("#aboutusdropdown").slideUp();
+        $("#homedropdown").slideUp();
+        //$("#eventsdropdown").slideToggle();
+        $("#submenudropdown").slideToggle();
+      }
+    }, 
+    
+    mouseleave: function () {
+      if ($(window).outerWidth() >= 960)
+      {
+        //var isOnSub = false;
+        setTimeout(function(){
+          /*$("#submenudropdown").mouseover(function(){isOnSub=true;});
+          if(isOnSub==false){
+            $("#submenudropdown").slideUp();
+          }*/
+          if(!$("#submenudropdown").is(':hover')){
+            $("#submenudropdown").slideUp();
+          }
+        },100);
+      }
+    }
+  })
+  //==========redirects for events page================
+    $("#2018cpbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_callforpapers.html'; }
+  })
+    $("#2018gabtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_generaladvice.html'; }
+  })
+    $("#2018vsbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_visa.html'; }
+  })
+    $("#2018srvfbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survfood.html'; }
+  })
+    $("#2018srvhbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survhist.html'; }
+  })
+    $("#2018srvtbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survtrip.html'; }
+  })
+    $("#2016cgbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2016_congress.html'; }
+  })
+    $("#pastpg").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/past_events.html'; }
+  })
+    $("#vidspg").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/videos.html'; }
+  })
   // ======== contact ========
   $("#contactbtn").on({  
     mouseenter: function () {
@@ -128,6 +195,10 @@ $(document).ready(function() {
         $("#homedropdown").slideUp(200);
         initialdrop = false;
       }
+    },
+    
+    dblclick: function () {
+      window.location.href='/itmd362-spring2019-project2/contact.html'; 
     },
     
     click: function () { window.location.href='/itmd362-spring2019-project2/contact.html'; }
