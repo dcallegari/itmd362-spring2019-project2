@@ -159,10 +159,35 @@ $(document).ready(function() {
       }
     }
   })
-  /*$("#submenudropdown").on(
-  {
-    mouseleave: function(){$("#submenudropdown").slideUp()}
-  })*/
+  //==========redirects for events page================
+    $("#2018cpbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_callforpapers.html'; }
+  })
+    $("#2018gabtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_generaladvice.html'; }
+  })
+    $("#2018vsbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_visa.html'; }
+  })
+    $("#2018srvfbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survfood.html'; }
+  })
+    $("#2018srvhbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survhist.html'; }
+  })
+    $("#2018srvtbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2018_congress_survtrip.html'; }
+  })
+    $("#2016cgbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/2016_congress.html'; }
+  })
+    $("#pastpg").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/past_events.html'; }
+  })
+    $("#vidspg").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/events/videos.html'; }
+  })
+  
   // ======== contact ========
   $("#contactbtn").on({  
     mouseenter: function () {
