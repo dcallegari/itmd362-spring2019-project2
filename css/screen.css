@@ -40,6 +40,10 @@ main {
       padding: 0 1rem;
 }
 
+nav{
+   z-index: 1;
+}
+
 section{
   margin: 1rem 0;
   padding: 1rem;
