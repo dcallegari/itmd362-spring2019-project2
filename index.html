@@ -15,6 +15,7 @@
     <link rel="stylesheet" media="screen" href="css/home.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="js/index_script.js"></script>
+    <script async src="js/slideshow_script.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
@@ -61,8 +62,28 @@
           <p class="margin">July 10-15, 2018</p>
           <button class="button">Sign up Today</button>
         </section>
-        <section class="slideshow">
-          <p class="margin">Slideshow will go here</p>
+        <section class="nopadding">
+          <!-- BEGIN SLIDESHOW -->
+          <div class="slideshow">
+            <ul id="image-list">
+              <!-- images -->
+              <li class="image-is-visible"><img src="img/img1.jpg" alt="Image 1"></li>
+              <li class="image"><img src="img/img2.jpg" alt="Image 2"></li>
+              <li class="image"><img src="img/img3.jpg" alt="Image 3"></li> 
+            </ul>
+            <!-- Left/right buttons -->
+            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button">Left</button></div>
+            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button">Right</button></div>
+          </div>
+          <!-- dots -->
+          <div id="slideshow-dots">
+            <ol id="dots-list">
+              <li class="dot-is-selected"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ol>
+          </div>
+          <!-- END SLIDESHOW -->
         </section>
       </main>
     </div>
