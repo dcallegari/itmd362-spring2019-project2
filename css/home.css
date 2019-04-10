@@ -41,7 +41,8 @@ https://material.io/design/typography/the-type-system.html#type-scale
 }
 
 .image-is-visible{
-  display: list-item; 
+  /*display: list-item; */
+  display: contents;
 }
 
 .image{
@@ -56,7 +57,7 @@ https://material.io/design/typography/the-type-system.html#type-scale
   opacity: .6;
 }
 
-#slideshow-left{
+#slideshow-left, #slideshow-left2{
   position: absolute;
   margin: -19px 0 0 0;
   top: 50%;
@@ -64,7 +65,7 @@ https://material.io/design/typography/the-type-system.html#type-scale
   z-index: 0;
 }
 
-#slideshow-right {
+#slideshow-right, #slideshow-right2{
   position: absolute;
   margin: -19px 0 0 0;
   top: 50%;
