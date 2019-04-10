@@ -105,12 +105,12 @@ $(document).ready(function() {
     },
 
     dblclick: function () {
-      window.location.href='/events.html'; 
+      window.location.href='/itmd362-spring2019-project2/events.html'; 
     },
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/events.html'; // go to home page
+        window.location.href='/itmd362-spring2019-project2/events.html'; // go to home page
       } else {
         $("#aboutusdropdown").slideUp();
         $("#homedropdown").slideUp();

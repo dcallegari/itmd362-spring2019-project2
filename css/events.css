@@ -51,7 +51,7 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-.contentbutton100:hover
+.contentbutton a:hover
 {
   background-color: dimgray;
 }
@@ -60,6 +60,11 @@
   width: 100%;
 }
 #w33
+{
+  width: 33%;
+  margin: auto;
+}
+.w33
 {
   width: 33%;
   margin: auto;
