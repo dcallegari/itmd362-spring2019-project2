@@ -271,10 +271,11 @@ $(document).ready(function() {
 //slides up all nav
 function slideNavAndSubnav(){
   $("#submenudropdown").slideUp(200,"swing", function(){
-    $("#eventsdropdown").slideUp(200);
-    $("#aboutusdropdown").slideUp(200);
-    $("#homedropdown").slideUp(200);
+    $("#eventsdropdown").slideUp(200,"swing", function(){$("#eventsdropdown").hide();});
+    $("#aboutusdropdown").slideUp(200,"swing", function(){$("#aboutusdropdown").hide();});
+    $("#homedropdown").slideUp(200,"swing", function(){$("#homedropdown").hide();});
   });
+  
     initialdrop = false;
     initialsubdrop = false;
 }
