@@ -1,0 +1,80 @@
+.centeredtext
+{
+  text-align: center;
+}
+.ulcontent
+{
+  margin-left: 10px;
+  list-style-type: circle;
+}
+.olcontent
+{
+  margin-left: 15px;
+  list-style-type: decimal;
+}
+
+.iframe-cont
+{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+.iframe-cont iframe, .yandex_maps iframe
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 0;
+}
+.yandex_maps
+{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 100%;
+}
+.topnav
+{
+  z-index: 10;
+}
+
+.contentbutton a
+{
+  display: block;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.contentbutton a:hover
+{
+  background-color: dimgray;
+}
+#w100
+{
+  width: 100%;
+}
+#w33
+{
+  width: 33%;
+  margin: auto;
+}
+.w33
+{
+  width: 33%;
+  margin: auto;
+}
+/*===============sub-sub navbar item ============*/
+#submenudropdown, #submenudropdown li a.submenubtn
+{
+  background-color: darkgray;
+}
+#submenudropdown li a.submenubtn:hover
+{
+  background-color: dimgray;
+}

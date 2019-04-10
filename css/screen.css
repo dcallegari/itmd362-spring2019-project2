@@ -40,6 +40,10 @@ main {
       padding: 0 1rem;
 }
 
+nav{
+   z-index: 1;
+}
+
 section{
   margin: 1rem 0;
   padding: 1rem;
@@ -283,6 +287,18 @@ nav{
 .dropdown a:hover {
   background-color: dimgrey;
 }
+
+
+/*===============sub-sub navbar item ============!!Edited!!*/
+#submenudropdown, #submenudropdown li a.submenubtn
+{
+  background-color: darkgray;
+}
+#submenudropdown li a.submenubtn:hover
+{
+  background-color: dimgray;
+}
+
 
 /* ========================  4. media queries ======================== */
 
