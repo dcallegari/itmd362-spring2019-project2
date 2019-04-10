@@ -1,0 +1,50 @@
+/*
+CSS to add styling for home page.
+Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
+Date created: 4/10/2019
+Date modified: 4/10/2019
+File Name: signupform.css
+*/
+
+/*
+Material design scale
+https://material.io/design/typography/the-type-system.html#type-scale
+*/
+
+#event_signup{
+  text-align: center;
+}
+
+h4.margin{
+  margin-bottom: 0;
+}
+
+h5.margin{
+  margin-bottom: 0;
+}
+
+input{
+  width: 100%
+}
+
+input.button{
+  margin: .5rem 0;
+  padding: 0 .25rem;
+}
+
+input.button{
+  max-width: 600px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  margin: .5rem 0;
+  padding: 0 .25rem;
+  height: 128px;
+  font-size: 1em; /* 16px = 16px * 1em */
+  line-height: 1.5em; /* 24px = 16px * 1.5em */
+  font-weight: 400; /* regular */
+  letter-spacing: .03125em; /* .5 / 16px */
+  resize: vertical;
+}
