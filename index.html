@@ -15,6 +15,7 @@
     <link rel="stylesheet" media="screen" href="css/home.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="js/index_script.js"></script>
+    <script async src="js/slideshow_script.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
@@ -26,19 +27,15 @@
           <ul id="navbars">
             <li>
               <a id="homebtn" class="button" href="#">Home</a>
-              <ul id="homedropdown" class="dropdown">
-                <div id="container">
-                  <li><a class="button" href="#">Page 1</a></li>
-                  <li><a class="button" href="#">Page 2</a></li>
-                </div>
-              </ul>
             </li>
             <li>
               <a id="aboutusbtn" class="button" href="#">About Us</a>
               <ul id="aboutusdropdown" class="dropdown">
                 <div id="container">
-                  <li><a class="button" href="#">Page 3</a></li>
-                  <li><a class="button" href="#">Page 4</a></li>
+                  <li><a id="abouthisbtn" class="button" href="#">History</a></li>
+                  <li><a id="aboutconbtn" class="button" href="#">Constitution</a></li>
+                  <li><a id="aboutdirbtn" class="button" href="#">Board of Directors</a></li>
+                  <li><a id="aboutjourbtn" class="button" href="#">D &amp; U Journal</a></li>
                 </div>
               </ul>
             </li>
@@ -76,8 +73,28 @@
           <p class="margin">July 10-15, 2018</p>
           <button class="button">Sign up Today</button>
         </section>
-        <section class="slideshow">
-          <p class="margin">Slideshow will go here</p>
+        <section class="nopadding">
+          <!-- BEGIN SLIDESHOW -->
+          <div class="slideshow">
+            <ul id="image-list">
+              <!-- images -->
+              <li class="image-is-visible"><img src="img/img1.jpg" alt="Image 1"></li>
+              <li class="image"><img src="img/img2.jpg" alt="Image 2"></li>
+              <li class="image"><img src="img/img3.jpg" alt="Image 3"></li> 
+            </ul>
+            <!-- Left/right buttons -->
+            <div id="slideshow-left"><button id="slideshow-leftbtn" class="button">Left</button></div>
+            <div id="slideshow-right"><button id="slideshow-rightbtn" class="button">Right</button></div>
+          </div>
+          <!-- dots -->
+          <div id="slideshow-dots">
+            <ol id="dots-list">
+              <li class="dot-is-selected"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ol>
+          </div>
+          <!-- END SLIDESHOW -->
         </section>
       </main>
     </div>

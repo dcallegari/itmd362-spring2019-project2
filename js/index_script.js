@@ -20,16 +20,15 @@ $(document).ready(function() {
   
   // ======== home button ========
   $("#homebtn").on({  
+  
     mouseenter: function () {
-      if ($(window).outerWidth() >= 960 && initialdrop == false){
-        $("#homedropdown").slideDown(200, function(){ initialdrop = true;});
-      } else if ($(window).outerWidth() >= 960) {
-        $("#homedropdown").show();
-        $("#eventsdropdown").hide();
-        $("#aboutusdropdown").hide();
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideUp(200);
+        $("#aboutusdropdown").slideUp(200);
+        initialdrop = false;
       }
     },
-
+	
     dblclick: function () {
       window.location.href='/itmd362-spring2019-project2/index.html'; 
     },
@@ -80,15 +79,15 @@ $(document).ready(function() {
   })
   
   $("#aboutconbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/constitution.html'; }
   })
   
   $("#aboutdirbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/directors.html'; }
   })
   
   $("#aboutjourbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/about/history.html'; }
+    click: function () { window.location.href='/itmd362-spring2019-project2/about/journal.html'; }
   })
   
   // ======== events ========!Edited!!
@@ -197,19 +196,12 @@ $(document).ready(function() {
         initialdrop = false;
       }
     },
+    
     dblclick: function () {
       window.location.href='/itmd362-spring2019-project2/contact.html'; 
     },
-
-    click: function () {
-      if ($(window).outerWidth() >= 960){
-        window.location.href='/itmd362-spring2019-project2/contact.html'; // go to home page
-      } else {
-        $("#aboutusdropdown").slideUp();
-        $("#homedropdown").slideUp();
-        $("#eventsdropdown").slideUp();
-      }
-    }
+    
+    click: function () { window.location.href='/itmd362-spring2019-project2/contact.html'; }
 
   })
 
