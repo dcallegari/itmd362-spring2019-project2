@@ -37,10 +37,7 @@ $(document).ready(function() {
     click: function () {
       if ($(window).outerWidth() >= 960){
         window.location.href='/itmd362-spring2019-project2/index.html'; // go to home page
-      } else if(initialsubdrop = true){
-        slideNavAndSubnav();
-      } 
-      else {
+      } else {
         $("#eventsdropdown").slideUp();
         $("#aboutusdropdown").slideUp();
         $("#homedropdown").slideToggle();
@@ -277,9 +274,9 @@ function slideNavAndSubnav(){
     $("#eventsdropdown").slideUp(200);
     $("#aboutusdropdown").slideUp(200);
     $("#homedropdown").slideUp(200);
+  });
     initialdrop = false;
     initialsubdrop = false;
-  });
 }
 
 //homepage signup button
@@ -288,8 +285,8 @@ function slideNavAndSubnav(){
   })
 
 //form signup button
-  $("#gotoformbtn").on({
-    click: function () { window.location.href='/itmd362-spring2019-project2/signupform.html'; }
+  $("#signupbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
   })
 
 
