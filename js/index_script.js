@@ -254,6 +254,8 @@ $(document).ready(function() {
     mouseleave: function () {
       if ($(window).outerWidth() >= 960){
         if(initialsubdrop = true){
+          initialdrop = false;
+          initialsubdrop = false;
           slideNavAndSubnav();
         }
         else{
@@ -275,9 +277,6 @@ function slideNavAndSubnav(){
     $("#aboutusdropdown").slideUp(200,"swing", function(){$("#aboutusdropdown").hide();});
     $("#homedropdown").slideUp(200,"swing", function(){$("#homedropdown").hide();});
   });
-  
-    initialdrop = false;
-    initialsubdrop = false;
 }
 
 //homepage signup button
