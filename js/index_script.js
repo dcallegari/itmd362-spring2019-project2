@@ -37,7 +37,10 @@ $(document).ready(function() {
     click: function () {
       if ($(window).outerWidth() >= 960){
         window.location.href='/itmd362-spring2019-project2/index.html'; // go to home page
-      } else {
+      } else if(initialsubdrop = true){
+        slideNavAndSubnav();
+      } 
+      else {
         $("#eventsdropdown").slideUp();
         $("#aboutusdropdown").slideUp();
         $("#homedropdown").slideToggle();
