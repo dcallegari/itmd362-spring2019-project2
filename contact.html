@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" media="screen" href="css/resets.css" />
     <link rel="stylesheet" media="screen" href="css/screen.css" />
+    <link rel="stylesheet" media="screen" href="css/contact.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="js/index_script.js"></script>
+    <script async src="js/contact_script.js"></script>
   </head>
   <body>
     <div id="content" class="wrapper">
@@ -78,15 +80,36 @@
       </nav>
       <!-- END NAVIGATION -->
       <main id="content">
-        <section>
-          <h2>Contact page</h2>
-          <p>Contact page.</p>
+        <section id="event_signup">
+          <h3>Contact Us</h3>
+          <form id="form" method="get" action="" autocomplete="on">
+            <p class="margin">Thank you for your interest in ISUD.</p>
+            <p class="margin">To contact us, please reach us via:</p>
+            <ol id="formbuttons">
+              <li id="input-name">
+                <input type="text" name="name" id="name" class="button" placeholder="Name *" required/>
+              </li>
+              <li id="input-email">
+                <input type="email" name="email" id="email" class="button" pattern="^.+@.+$" placeholder="Email *" required/>
+              </li>
+              <li id="input-subject">
+                <input type="text" name="subject" id="subject" class="button" placeholder="Subject"/>
+              </li>
+              <li id="input-message">
+                <textarea type="textarea" name="message" id="message" class="" placeholder="Message"></textarea>
+              </li>
+              <li id="input-submit">
+                <input type="submit" name="submit" id="submit" class="button" value="Send"/>
+              </li>
+            </ol>
+          </form>
+
         </section>
       </main>
     </div>
     <footer>
-      <p class=caption>Site design © 2019 Careless Spiders</p>
-      <p class=caption>All rights reserved</p>
+      <p class="caption margin">Site design © 2019 Careless Spiders</p>
+      <p class="caption margin">All rights reserved</p>
     </footer>
   </body>
 </html>
