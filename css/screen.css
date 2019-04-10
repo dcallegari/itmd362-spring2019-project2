@@ -293,6 +293,18 @@ nav{
   background-color: dimgrey;
 }
 
+
+/*===============sub-sub navbar item ============!!Edited!!*/
+#submenudropdown, #submenudropdown li a.submenubtn
+{
+  background-color: darkgray;
+}
+#submenudropdown li a.submenubtn:hover
+{
+  background-color: dimgray;
+}
+
+
 /* ========================  4. media queries ======================== */
 
 
