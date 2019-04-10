@@ -64,3 +64,12 @@
   width: 33%;
   margin: auto;
 }
+
+#submenudropdown, #submenudropdown li a.submenubtn
+{
+  background-color: darkgray;
+}
+#submenudropdown li a.submenubtn:hover
+{
+  background-color: dimgray;
+}
