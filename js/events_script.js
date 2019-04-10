@@ -120,7 +120,7 @@ $(document).ready(function() {
 
   })
   //=============submenu=============
-  $("#submenu").on({  
+  $("#submenuev").on({  
     mouseenter: function () {
       if ($(window).outerWidth() >= 960 && initialdrop == false){
         $("#submenudropdown").slideDown(200, function(){ initialdrop = true;});
@@ -134,22 +134,35 @@ $(document).ready(function() {
 
     click: function () {
       if ($(window).outerWidth() >= 960){
-        window.location.href='/events.html'; // go to home page
+        //window.location.href='/events.html'; 
       } else {
         $("#aboutusdropdown").slideUp();
         $("#homedropdown").slideUp();
-        $("#eventsdropdown").slideToggle();
+        //$("#eventsdropdown").slideToggle();
         $("#submenudropdown").slideToggle();
       }
     }, 
     
     mouseleave: function () {
       if ($(window).outerWidth() >= 960)
-      {$("#submenudropdown").slideToggle();}
+      {
+        //var isOnSub = false;
+        setTimeout(function(){
+          /*$("#submenudropdown").mouseover(function(){isOnSub=true;});
+          if(isOnSub==false){
+            $("#submenudropdown").slideUp();
+          }*/
+          if(!$("#submenudropdown").is(':hover')){
+            $("#submenudropdown").slideUp();
+          }
+        },100);
+      }
     }
-
   })
-  
+  /*$("#submenudropdown").on(
+  {
+    mouseleave: function(){$("#submenudropdown").slideUp()}
+  })*/
   // ======== contact ========
   $("#contactbtn").on({  
     mouseenter: function () {
