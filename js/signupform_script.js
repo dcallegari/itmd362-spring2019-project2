@@ -12,6 +12,7 @@ $(document).ready(function() {
   $(this).submit(function(){
     alert("Thank you for signing up. You will be redirected back to the homepage in a moment...");
     $( "#homebtn" ).trigger( "click" );
+    return false;
 });
 
 });
