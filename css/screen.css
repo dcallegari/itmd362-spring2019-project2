@@ -47,15 +47,6 @@ section{
   overflow: hidden;
 }
 
-ul.about {
-  display: block;
-  width: 95%;
-  margin: auto;
-  list-style-type: circle;
-  list-style-position: outside;
-}
-
-
 footer{
   padding: 1em;
   background-color: grey;
