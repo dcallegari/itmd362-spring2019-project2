@@ -20,16 +20,15 @@ $(document).ready(function() {
   
   // ======== home button ========
   $("#homebtn").on({  
+  
     mouseenter: function () {
-      if ($(window).outerWidth() >= 960 && initialdrop == false){
-        $("#homedropdown").slideDown(200, function(){ initialdrop = true;});
-      } else if ($(window).outerWidth() >= 960) {
-        $("#homedropdown").show();
-        $("#eventsdropdown").hide();
-        $("#aboutusdropdown").hide();
+      if ($(window).outerWidth() >= 960){
+        $("#eventsdropdown").slideUp(200);
+        $("#aboutusdropdown").slideUp(200);
+        initialdrop = false;
       }
     },
-
+	
     dblclick: function () {
       window.location.href='/itmd362-spring2019-project2/index.html'; 
     },
