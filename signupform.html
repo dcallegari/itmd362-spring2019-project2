@@ -81,15 +81,25 @@
       <!-- END NAVIGATION -->
       <main id="content">
         <section id="event_signup">
-          <h3>What is XII World Congress?</h3>
-          <p class="margin">ISUD's XII World Congress is a confrence to promote dialogue concerning various crucial philosophical issues in today’s world. 
-          </p>
-          <p class="margin">The goal of this confrence is to explore the role of philosophy in our complicated times.</p>
-          <h4>When?</h4>
-          <p class="margin">July 10-15, 2018</p>
-          <h4>Where?</h4>
-          <p class="margin">Pontifical Catholic University of Peru - Lima, Peru</p>
-          <button id="gotoformbtn" class="button">Order my tickets Now</button>
+          <h3>XII World Congress Sign Up</h3>
+          <form id="form" method="get" action="" autocomplete="on">
+            <p class="margin">Please fill out the boxes below</p>
+            <ol id="formbuttons">
+              <li id="input-firstname">
+                <input type="text" name="firstname" id="firstname" class="button" placeholder="First Name" required/>
+              </li>
+              <li id="input-lastname">
+                <input type="text" name="lastname" id="lastname" class="button" placeholder="Last Name"/>
+              </li>
+              <li id="input-email">
+                <input type="email" name="email" id="email" class="button" pattern="^.+@.+$" placeholder="Email address" required/>
+              </li>
+              <li id="input-submit">
+                <input type="submit" name="submit" id="submit" class="button" value="Sign Up"/>
+              </li>
+            </ol>
+          </form>
+
         </section>
       </main>
     </div>

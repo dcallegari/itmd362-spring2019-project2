@@ -3,7 +3,7 @@ CSS to add styling for home page.
 Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
 Date created: 4/10/2019
 Date modified: 4/10/2019
-File Name: signup.css
+File Name: signupform.css
 */
 
 /*
@@ -21,4 +21,17 @@ h4.margin{
 
 h5.margin{
   margin-bottom: 0;
+}
+
+input{
+  width: 100%
+}
+
+input.button{
+  margin: .5rem 0;
+  padding: 0 .25rem;
+}
+
+input.button{
+  max-width: 600px;
 }
