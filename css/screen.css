@@ -144,10 +144,10 @@ p.margin{
   line-height: 1.25rem; /* 20px = 16px * 1.25em */
   font-weight: 400; /* regular */
   letter-spacing: .0178571429em; /* .25 / 14px */
-  /*margin-block-start: 1em;
+  margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;*/
+  margin-inline-end: 0px;
 }
 
 .subtitle {
