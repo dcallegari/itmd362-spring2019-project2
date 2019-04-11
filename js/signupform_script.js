@@ -3,14 +3,15 @@
    Programmers: Daniel Callegari, Dongboum Shin, Jacob Huebner
    Date created: 4/10/2019
    Date modified: 4/10/2019
-   File Name: contact_script.js
+   File Name: signupform_script.js
 */
 
 // Runs when the document starts
 $(document).ready(function() {
 
   $(this).submit(function(){
-    alert("Message sent! We thank you for your input.");
+    alert("Thank you for signing up. You will be redirected back to the homepage in a moment...");
+    $( "#homebtn" ).trigger( "click" );
     return false;
 });
 

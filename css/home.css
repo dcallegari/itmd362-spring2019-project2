@@ -19,6 +19,10 @@ https://material.io/design/typography/the-type-system.html#type-scale
   padding: 0;
 }
 
+#meet_the_team{
+  text-align: center;
+}
+
 /* BEGIN SLIDESHOW */
 
 .slideshow{
@@ -105,3 +109,59 @@ https://material.io/design/typography/the-type-system.html#type-scale
 }
 
 /* END SLIDESHOw */
+
+/* BEGIN IMAGE GRID */
+
+.grid-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-col{
+  padding: 16px;
+  flex-basis: 100%;
+  -ms-flex: auto;
+  position: relative;
+  text-align: center;
+}
+
+.grid-col img{
+  width: 100%;
+  position: relative;
+  /* set this to fix sizing issues*/
+  max-width: 232px;
+  /* Round portraits */
+  border-radius: 50%;
+}
+
+.grid-container{
+  margin: 0 auto;
+}
+
+/* 600px Break Point 1: Small or larger  */
+@media screen and (min-width: 37.5em) {  
+  .grid-col{
+    flex-basis: 50%;
+  }
+
+}
+
+/* 960px Break Point 3: large */
+@media screen and (min-width: 60em) {
+  .grid-col{
+    flex-basis: 33%;
+  }
+}
+
+/* 1600px Break Point 3: large */
+@media screen and (min-width: 100em) {
+
+}
+
+/*  1920px Break Point 4: extra-large  */
+@media screen and (min-width: 120em) {
+
+}
+
+/* END IMAGE GRID */
