@@ -233,20 +233,9 @@ $(document).ready(function() {
 
   // ======== contact ========
   $("#contactbtn").on({  
-
     mouseenter: function () {
-      if ($(window).outerWidth() >= 960 && initialdrop == false){
-        initialdrop = true;
-      }
-      else if ($(window).outerWidth() >= 960){
-        if(initialsubdrop == true){
-          slideNavAndSubnav();
-        }
-        else{
-          $("#aboutusdropdown").hide();
-          $("#eventsdropdown").hide();  
-          $("#homedropdown").hide();
-        }
+      if ($(window).outerWidth() >= 960){
+        slideNavAndSubnav();
       }
     },
 
@@ -265,8 +254,6 @@ $(document).ready(function() {
     mouseleave: function () {
       if ($(window).outerWidth() >= 960){
         if(initialsubdrop = true){
-          initialdrop = false;
-          initialsubdrop = false;
           slideNavAndSubnav();
         }
         else{
@@ -284,21 +271,23 @@ $(document).ready(function() {
 //slides up all nav
 function slideNavAndSubnav(){
   $("#submenudropdown").slideUp(200,"swing", function(){
-    $("#eventsdropdown").slideUp(200,"swing", function(){$("#eventsdropdown").hide();});
-    $("#aboutusdropdown").slideUp(200,"swing", function(){$("#aboutusdropdown").hide();});
-    $("#homedropdown").slideUp(200,"swing", function(){$("#homedropdown").hide();});
+    $("#eventsdropdown").slideUp(200);
+    $("#aboutusdropdown").slideUp(200);
+    $("#homedropdown").slideUp(200);
+    initialdrop = false;
+    initialsubdrop = false;
   });
 }
 
 //homepage signup button
-$("#signupbtn").on({
-  click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
-})
+  $("#signupbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
+  })
 
 //form signup button
-$("#signupbtn").on({
-  click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
-})
+  $("#gotoformbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/signupform.html'; }
+  })
 
 
 // =====================================================================
