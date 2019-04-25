@@ -53,7 +53,8 @@ section{
 
 footer{
   padding: 1em;
-  background-color: grey;
+  background-color: #4a64ff;
+  color: #ffffff;
   text-align: center;
   box-shadow: 0px 0px 1px #888888;
 }
@@ -191,7 +192,12 @@ img {
 nav{
   overflow: hidden;
   box-shadow: 1px 1px 4px #888888;
-  background-color: white;
+  background-color: #001dca;
+  color: #ffffff;
+}
+
+#menu{
+  color: #ffffff;
 }
 
 /* Company name/logo */
@@ -245,20 +251,21 @@ nav{
 }
 
 .topnav ul li{
-  border-top: solid 2px grey; 
+  
 }
 
 .topnav a {
   display: block;
   color: black;
-  background-color: lightgrey;
+  background-color: #0745ff;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: whitesmoke;
+  background-color: #4a64ff;
 }
 
 #navbars{
@@ -270,24 +277,24 @@ nav{
 }
 
 .dropdown a {
-  background-color: grey;
+  background-color: #6f71ff;
   color: white;
   padding: 8px 12px;
 }
 
 .dropdown a:hover {
-  background-color: dimgrey;
+  background-color: #9fa6ff;
 }
-
 
 /*===============sub-sub navbar item ============!!Edited!!*/
 #submenudropdown, #submenudropdown li a.submenubtn
 {
-  background-color: darkgray;
+  background-color: #6f71ff;
+  color: white;
 }
 #submenudropdown li a.submenubtn:hover
 {
-  background-color: dimgray;
+  background-color: #9fa6ff;
 }
 
 /* ========================  3.5 Slideshow ======================== */
@@ -363,7 +370,7 @@ nav{
   cursor: pointer;
   height: 1rem;
   width: 1rem;
-  background-color: grey;
+  background-color: #6f71ff;
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -374,7 +381,7 @@ nav{
   cursor: pointer;
   height: 1rem;
   width: 1rem;
-  background-color: #0745ff;
+  background-color: #001dca;
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -385,6 +392,14 @@ nav{
   display: block;
   text-align: center;
 
+}
+
+.smallimg{
+  display: block;
+}
+
+.bigimg{
+  display: none;
 }
 
 /* END SLIDESHOw */
@@ -436,6 +451,12 @@ input.button{
   max-width: 600px;
 }
 
+#signupbtn, #gotoformbtn, #submit{
+  background-color: #ffc107;
+  color: #000000;
+  border-color: #fff350;
+}
+
 /* ========================  4. media queries ======================== */
 
 
@@ -448,6 +469,14 @@ input.button{
 
   .grid-col{
     flex-basis: 50%;
+  }
+
+  .smallimg{
+    display: none;
+  }
+
+  .bigimg{
+    display: block;
   }
 
 }
@@ -492,7 +521,7 @@ input.button{
 
   .topnav a {
     display: inline-block;
-    background-color: white;
+    background-color: #001dca;
   }
 
   /* make nav bar visible */
@@ -514,7 +543,7 @@ input.button{
   .dropdown{
     overflow: hidden;
     position: fixed;
-    background-color: grey;
+    background-color: #0745ff;
     text-align: right;
     width: 100%;
     left: 0;
@@ -526,7 +555,8 @@ input.button{
   }
 
   .dropdown a {
-    background-color: grey;
+    background-color: #0745ff;
+    color: #ffffff;
     display: inline-block;
   }
 
@@ -534,8 +564,10 @@ input.button{
     display: block;
     max-width: 1280px;
     margin: 0 auto;
-  }
-
+    background-color: #6f71ff;
+    
+  } 
+  
   .grid-col{
     flex-basis: 33%;
   }
