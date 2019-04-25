@@ -387,6 +387,14 @@ nav{
 
 }
 
+.smallimg{
+  display: block;
+}
+
+.bigimg{
+  display: none;
+}
+
 /* END SLIDESHOw */
 
 /* BEGIN IMAGE GRID */
@@ -448,6 +456,14 @@ input.button{
 
   .grid-col{
     flex-basis: 50%;
+  }
+
+  .smallimg{
+    display: none;
+  }
+
+  .bigimg{
+    display: block;
   }
 
 }
