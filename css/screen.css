@@ -144,10 +144,6 @@ p.margin{
   line-height: 1.25rem; /* 20px = 16px * 1.25em */
   font-weight: 400; /* regular */
   letter-spacing: .0178571429em; /* .25 / 14px */
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .subtitle {
@@ -180,9 +176,6 @@ p.margin{
   text-transform: uppercase;
   padding: 0 0 1rem 0;
 }
-
-.margin
-
 
 /* ========================  2. Responsive Media ======================== */
 img, audio, video {
@@ -297,6 +290,134 @@ nav{
   background-color: dimgray;
 }
 
+/* ========================  3.5 Slideshow ======================== */
+#event_signup{
+  text-align: center;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+#meet_the_team{
+  text-align: center;
+}
+
+/* BEGIN SLIDESHOW */
+
+.slideshow{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+/* slideshow images */
+
+.slideshow img{
+  width: 100%;
+  z-index: 0;
+}
+
+.slideshow ul li{
+  line-height: 0;
+  height: 100%;
+}
+
+.image-is-visible{
+  display: list-item; 
+}
+
+.image{
+  display: none;
+}
+
+/* slideshow buttons */
+.slideshow .button{
+  width: 4rem;
+  border: none;
+  background: white;
+  opacity: .6;
+}
+
+#slideshow-left{
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  left: 0%;
+  z-index: 0;
+}
+
+#slideshow-right {
+  position: absolute;
+  margin: -19px 0 0 0;
+  top: 50%;
+  right: 0%;
+  z-index: 0;
+}
+
+/* slideshow dots */
+.dot{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: grey;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.dot-is-selected{
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  background-color: #0745ff;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#slideshow-dots{
+  margin: .5rem;
+  clear: both;
+  display: block;
+  text-align: center;
+
+}
+
+/* END SLIDESHOw */
+
+/* BEGIN IMAGE GRID */
+
+.grid-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-col{
+  padding: 16px;
+  flex-basis: 100%;
+  -ms-flex: auto;
+  position: relative;
+  text-align: center;
+}
+
+.grid-col img{
+  width: 100%;
+  position: relative;
+  /* set this to fix sizing issues*/
+  max-width: 232px;
+  /* Round portraits */
+  border-radius: 50%;
+}
+
+.grid-container{
+  margin: 0 auto;
+}
+
 
 /* ========================  4. media queries ======================== */
 
@@ -306,6 +427,10 @@ nav{
 
   .dropdown{
     display: none;
+  }
+  
+  .grid-col{
+    flex-basis: 50%;
   }
 
 }
@@ -362,7 +487,7 @@ nav{
     display: none;
   }
 
-  #container{
+  .container{
     max-width: 1280px;
     margin: 0 auto;
   }
@@ -393,6 +518,10 @@ nav{
     max-width: 1280px;
     margin: 0 auto;
   }
+  
+  .grid-col{
+    flex-basis: 33%;
+  }
 
 }
 
@@ -410,7 +539,7 @@ nav{
     display: inline-block;
   }
 
-  #container{
+  .container{
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
@@ -431,7 +560,7 @@ nav{
     display: inline-block;
   }
 
-  #container{
+  .container{
     max-width: 1600px;
     width: 1600px;
     margin: 0 auto;
