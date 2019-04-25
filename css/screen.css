@@ -451,7 +451,7 @@ input.button{
   max-width: 600px;
 }
 
-#signupbtn{
+#signupbtn, #gotoformbtn, #submit{
   background-color: #ffc107;
   color: #000000;
   border-color: #fff350;
