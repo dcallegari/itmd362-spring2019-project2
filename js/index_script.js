@@ -279,6 +279,17 @@ function slideNavAndSubnav(){
   });
 }
 
+//homepage signup button
+  $("#signupbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/signup.html'; }
+  })
+
+//form signup button
+  $("#gotoformbtn").on({
+    click: function () { window.location.href='/itmd362-spring2019-project2/signupform.html'; }
+  })
+
+
 // =====================================================================
 // Shows or hides the mobile navbar when resizing to larger screen
 var resized = false;
