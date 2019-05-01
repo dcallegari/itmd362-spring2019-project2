@@ -460,6 +460,8 @@ input.button{
 /* ======================== 3.7 About Us edit ======================== */
 h4.article {
   margin: .66em 0;
+  text-align: center;
+  text-decoration: underline;
 }
 
 li.margin {
@@ -537,7 +539,6 @@ h3.contitle2 {
 #articles {
   display: block;
   margin: 1em;
-  text-align: center;
 }
 
 /* ========================  4. media queries ======================== */
