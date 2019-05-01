@@ -299,8 +299,92 @@ nav{
   background-color: dimgray;
 }
 
+/* =========================  4. custom css  ========================= */
 
-/* ========================  4. media queries ======================== */
+/* ========================  By: D. Callegari ======================== */
+
+h4.article {
+  margin: .66em 0;
+}
+
+li.margin {
+  margin: 1em 0;
+}
+
+ul.about {
+  display: block;
+  width: 95%;
+  margin: auto;
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+ul.leaders {
+  margin: 1em 0 1em 1em;
+}
+
+ol.constitute li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.abtlogo {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+  float: left;
+}
+
+.location {
+  font-size: .75em;
+}
+
+#daubook {
+  display: block;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 1em 0;
+  float: left;
+}
+
+.journal {
+  width: 220px;
+  height: 350px;
+  margin: 1em;
+  float: left;
+}
+
+.jtitle {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#contitle {
+  display: block;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+h3.contitle1 {
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h3.contitle2 {
+  font-size: 1.25em;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+#articles {
+  display: block;
+  margin: 1em;
+}
+
+/* ========================  5. media queries ======================== */
 
 
 /* ================ 600px Break Point 1: Small or larger ================ */
