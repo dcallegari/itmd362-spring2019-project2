@@ -537,6 +537,7 @@ h3.contitle2 {
 #articles {
   display: block;
   margin: 1em;
+  text-align: center;
 }
 
 /* ========================  4. media queries ======================== */
